@@ -4,7 +4,7 @@ A Fuss-Free Guide to install updated Tensorflow V1.0.1 and Keras V2.0.2 on a p2.
 
 ## Pre-setup
 
-First you'll need a p2.xlarge (or g2.2xlarge) instance to use with at least 16GB of storage. Once you've made it, connect to it and type the following command:
+First you'll need a p2.xlarge (or g2.2xlarge) instance on Ubuntu 16.04 to use with at least 16GB of storage. Once you've made it, connect to it and type the following command:
 
 ```
 git clone https://github.com/abhmul/AWSTensorflowKerasv2
