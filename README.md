@@ -56,5 +56,22 @@ This one will require some user input.
 
 ## Step 4 (Optional):
 
-Now we can verify if everything properly installed with the example included in the repo. The example trains a pre-trained version of InceptionV3 to discern between images of cats and dogs
+Now we can verify if everything properly installed with the example included in the repo. The example trains a pre-trained version of InceptionV3 to discern between images of cats and dogs. Run the following commands to test our installation:
 
+```
+cd AWSTensorflowKerasv2
+python3 bottleneck_example.py
+```
+
+If everything worked properly, after Tensorflow finishes loading up we should see the model training at around 150s/epoch. The python file will save the best model weights after every epoch.
+
+## Step 5 (Cleanup)
+
+Now that we've got everything installed, we can clean up our storage by deleting all the files we downloaded using the commmands:
+
+```
+sudo rm -rf AWSTensorflowKerasv2
+sudo rm step*
+```
+
+### That's it! You're AWS instance is ready for whatever deep learning tasks you throw at it!
