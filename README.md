@@ -48,7 +48,7 @@ This one will require some user input.
 
 1. For the NVIDIA driver installation (the screen will look blue with some prompts) click "Accept" and "OK" whenever it asks.
 2. For the CUDA installation, 
-  1. you'll have to hold "Enter" until you reach the end of the EULA, and then type "accept" 
-  2. Click "Enter" to accept the default CUDA install path
-  3. Click "Enter to accept the default desktop menu shortcuts
-  4. Click "Enter" to do the default symbolic link creation between /usr/local/cuda-8.0 and /usr/local/cuda
+  1.You'll have to hold "Enter" until you reach the end of the EULA, and then type "accept" 
+  2.Click "Enter" to accept the default CUDA install path
+  3.Click "Enter to accept the default desktop menu shortcuts
+  4.Click "Enter" to do the default symbolic link creation between /usr/local/cuda-8.0 and /usr/local/cuda
