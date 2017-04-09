@@ -54,5 +54,7 @@ This one will require some user input.
    * Click "Enter to accept the default desktop menu shortcuts
    * Click "Enter" to do the default symbolic link creation between /usr/local/cuda-8.0 and /usr/local/cuda
 
+## Step 4 (Optional):
 
+Now we can verify if everything properly installed with the example included in the repo. The example trains a pre-trained version of InceptionV3 to discern between images of cats and dogs
 
