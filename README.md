@@ -47,7 +47,8 @@ sh step3.sh
 This one will require some user input. 
 
 1. For the NVIDIA driver installation (the screen will look blue with some prompts) click "Accept" and "OK" whenever it asks.
-2. For the CUDA installation, 
+2. For the CUDA installation
+
   * You'll have to hold "Enter" until you reach the end of the EULA, and then type "accept" 
   * Click "Enter" to accept the default CUDA install path
   * Click "Enter to accept the default desktop menu shortcuts
