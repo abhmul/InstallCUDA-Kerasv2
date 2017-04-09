@@ -20,9 +20,11 @@ tar -xzf cudnn-8.0-linux-x64-v5.1.tgz
 sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
 sudo cp -P cuda/include/cudnn.h /usr/local/cuda/include/
 
-# Set up the library path and home
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+# Set up the CUDA home, path, and library path
 export CUDA_HOME=/usr/local/cuda
+export PATH=$PATH:$CUDA_HOME/bin
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$CUDA_HOME/lib64"
+
 
 # Do some cleanup
 sudo rm cuda_8.0.61_375.26_linux.run
