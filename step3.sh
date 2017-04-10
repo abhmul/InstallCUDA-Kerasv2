@@ -21,9 +21,9 @@ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
 sudo cp -P cuda/include/cudnn.h /usr/local/cuda/include/
 
 # Set up the CUDA home, path, and library path
-export CUDA_HOME=/usr/local/cuda
-export PATH=$PATH:$CUDA_HOME/bin
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$CUDA_HOME/lib64"
+echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc
+echo 'export PATH=$PATH:$CUDA_HOME/bin' >> ~/.bashrc
+echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$CUDA_HOME/lib64' >> ~/.bashrc
 
 
 # Do some cleanup
