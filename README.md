@@ -61,6 +61,7 @@ Now we can verify if everything properly installed with the example included in 
 
 ```
 cd AWSTensorflowKerasv2
+tar -zxvf CatDogDataset.tar.gz
 python3 bottleneck_example.py
 ```
 
