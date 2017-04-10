@@ -72,6 +72,7 @@ If everything worked properly, after Tensorflow finishes loading up we should se
 Now that we've got everything installed, we can clean up our storage by deleting all the files we downloaded using the commmands:
 
 ```
+cd ..
 sudo rm -rf AWSTensorflowKerasv2
 sudo rm step*
 ```
