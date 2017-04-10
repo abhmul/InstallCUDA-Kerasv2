@@ -34,7 +34,7 @@ Just run:
 sh step2.sh
 ```
 
-Again, the script will reboot the machine when it's finished, so same deal as in Step 1
+Again, the script will reboot the machine when it's finished, so same deal as in Step 1.
 
 ## Step 3:
 
@@ -53,7 +53,8 @@ This one will require some user input.
    * Click "Enter" to accept the default CUDA install path
    * Click "Enter to accept the default desktop menu shortcuts
    * Click "Enter" to do the default symbolic link creation between /usr/local/cuda-8.0 and /usr/local/cuda
-
+ 
+ The script will do one last reboot, so same deal as in Step 1.
 
 ## Step 4 (Optional):
 
