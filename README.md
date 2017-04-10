@@ -54,6 +54,16 @@ This one will require some user input.
    * Click "Enter to accept the default desktop menu shortcuts
    * Click "Enter" to do the default symbolic link creation between /usr/local/cuda-8.0 and /usr/local/cuda
 
+## Step 3.1:
+
+For some reason, setting up the Environment Variables from the shell script won't work properly so we'll need to enter the following commands:
+
+```
+export CUDA_HOME=/usr/local/cuda
+export PATH=$PATH:$CUDA_HOME/bin
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$CUDA_HOME/lib64"
+```
+
 ## Step 4 (Optional):
 
 Now we can verify if everything properly installed with the example included in the repo. The example trains a pre-trained version of InceptionV3 to discern between images of cats and dogs. Run the following commands to test our installation:
