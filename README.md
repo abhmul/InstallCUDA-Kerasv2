@@ -1,10 +1,10 @@
 # InstallCUDA-Kerasv2
 
-A Fuss-Free Guide to install updated Tensorflow V1.0.1 and Keras V2.0.2 on Ubuntu 16.04 with a GPU
+A Fuss-Free Guide to install updated Tensorflow V1 and Keras V2 on Ubuntu 16.04 with a GPU
 
 ## Pre-setup
 
-First you'll need an instance on Ubuntu 16.04 with an Nvidia GPU (p2.xlarge AWS, g2.2xlarge AWS, GPU Google Cloud, etc.) to use with at least 16GB of storage. Once you've made it, connect to it and type the following command:
+First you'll need an instance on Ubuntu 16.04 LTS with an Nvidia GPU (p2.xlarge AWS, g2.2xlarge AWS, GPU Google Cloud, etc.) to use with at least 16GB of storage. Once you've made it, connect to it and type the following command:
 
 ```
 git clone https://github.com/abhmul/InstallCUDA-Kerasv2
@@ -78,4 +78,4 @@ sudo rm -rf InstallCUDA-Kerasv2
 sudo rm step*
 ```
 
-### That's it! You're AWS instance is ready for whatever deep learning tasks you throw at it!
+### That's it! You're instance is ready for whatever deep learning tasks you throw at it!
