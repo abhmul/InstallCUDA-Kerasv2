@@ -1,19 +1,19 @@
-# AWSTensorflowKerasv2
+# InstallCUDA-Kerasv2
 
-A Fuss-Free Guide to install updated Tensorflow V1.0.1 and Keras V2.0.2 on a p2.xlarge instance from AWS
+A Fuss-Free Guide to install updated Tensorflow V1.0.1 and Keras V2.0.2 on Ubuntu 16.04 with a GPU
 
 ## Pre-setup
 
 First you'll need a p2.xlarge (or g2.2xlarge) instance on Ubuntu 16.04 to use with at least 16GB of storage. Once you've made it, connect to it and type the following command:
 
 ```
-git clone https://github.com/abhmul/AWSTensorflowKerasv2
+git clone https://github.com/abhmul/InstallCUDA-Kerasv2
 ```
 
 Then run the following command:
 
 ```
-mv AWSTensorflowKerasv2/step* .
+mv InstallCUDA-Kerasv2/step* .
 ```
 
 ## Step 1
@@ -61,7 +61,7 @@ This one will require some user input.
 Now we can verify if everything properly installed with the example included in the repo. The example trains a pre-trained version of InceptionV3 to discern between images of cats and dogs. Run the following commands to test our installation:
 
 ```
-cd AWSTensorflowKerasv2
+cd InstallCUDA-Kerasv2
 tar -zxvf CatDogDataset.tar.gz
 python3 bottleneck_example.py
 ```
@@ -74,7 +74,7 @@ Now that we've got everything installed, we can clean up our storage by deleting
 
 ```
 cd ..
-sudo rm -rf AWSTensorflowKerasv2
+sudo rm -rf InstallCUDA-Kerasv2
 sudo rm step*
 ```
 
