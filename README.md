@@ -1,6 +1,6 @@
 # InstallCUDA-Kerasv2
 
-A Fuss-Free Guide to install updated Tensorflow V1 and Keras V2 on Ubuntu 16.04 with a GPU
+ A Fuss-Free 3-step Guide to install updated Tensorflow V1 and Keras V2 on Ubuntu 16.04 with a GPU
 
 ## Pre-setup
 
