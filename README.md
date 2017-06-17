@@ -4,7 +4,7 @@ A Fuss-Free Guide to install updated Tensorflow V1.0.1 and Keras V2.0.2 on Ubunt
 
 ## Pre-setup
 
-First you'll need a p2.xlarge (or g2.2xlarge) instance on Ubuntu 16.04 to use with at least 16GB of storage. Once you've made it, connect to it and type the following command:
+First you'll need an instance on Ubuntu 16.04 with an Nvidia GPU (p2.xlarge AWS, g2.2xlarge AWS, GPU Google Cloud, etc.) to use with at least 16GB of storage. Once you've made it, connect to it and type the following command:
 
 ```
 git clone https://github.com/abhmul/InstallCUDA-Kerasv2
