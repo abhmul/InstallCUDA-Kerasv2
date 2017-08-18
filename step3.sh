@@ -34,7 +34,11 @@ sudo rm -rf nvidia_installers
 
 # Install tensorflow
 sudo pip3 install --upgrade pip
-sudo pip3 install tensorflow-gpu
+export TF_BINARY_URL=https://pypi.python.org/packages/f0/2e/49c8cf629dfd4bc4932$
+sudo pip3 install --ignore-installed --upgrade $TF_BINARY_URL
+export TF_GPU_BINARY_URL=https://pypi.python.org/packages/f2/5e/a51a5df287753c6$
+sudo pip3 install --ignore-installed --upgrade $TF_GPU_BINARY_URL
+#sudo pip3 install tensorflow-gpu
 
 # Install keras
 sudo pip3 install keras
