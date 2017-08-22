@@ -70,7 +70,7 @@ tar -zxvf CatDogDataset.tar.gz
 python3 bottleneck_example.py
 ```
 
-If everything worked properly, after Tensorflow finishes loading up we should see the model training at around 150s/epoch. The python file will save the best model weights after every epoch.
+If everything worked properly, after Tensorflow finishes loading up we should see the model training at around 123s/epoch for the first epoch. By the 2nd or 3rd epoch the model should be training at around 103s/epoch. The python file will save the best model weights after every epoch.
 
 ## Step 5 (Cleanup)
 
