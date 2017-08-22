@@ -5,7 +5,6 @@ sudo apt-get install -y linux-source linux-headers-`uname -r`
 
 # Install CUDA 8.0 (note – don't use any other version)
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
-mv cuda_8.0.61_375.26_linux-run cuda_8.0.61_375.26_linux.run
 chmod +x cuda_8.0.61_375.26_linux.run
 ./cuda_8.0.61_375.26_linux.run -extract=`pwd`/nvidia_installers
 cd nvidia_installers
@@ -25,6 +24,9 @@ echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc
 echo 'export PATH=$PATH:$CUDA_HOME/bin' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64' >> ~/.bashrc
 
+# Install the CUDA 8 Patch
+wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/patches/2/cuda_8.0.61.2_linux-run
+sudo sh cuda_8.0.61.2_linux.run
 
 # Do some cleanup
 sudo rm cuda_8.0.61_375.26_linux.run
