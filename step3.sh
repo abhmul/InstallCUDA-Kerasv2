@@ -32,7 +32,8 @@ echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64' >> ~/.bashrc
 
 # Do some cleanup
 sudo rm cuda_8.0.61_375.26_linux.run
-sudo rm cudnn-8.0-linux-x64-v5.1.tgz
+sudo rm cuda_8.0.61.2_linux.run
+sudo rm cudnn-8.0-linux-x64-v6.0.tgz
 sudo rm -rf cuda
 sudo rm -rf nvidia_installers
 
