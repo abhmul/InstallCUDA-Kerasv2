@@ -14,6 +14,11 @@ sudo modprobe nvidia
 sudo ./cuda-linux64-rel-8.0.61-21551265.run
 cd ..
 
+# Install the CUDA 8 Patch
+wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/patches/2/cuda_8.0.61.2_linux-run
+mv cuda_8.0.61.2_linux-run cuda_8.0.61.2_linux.run
+sudo sh cuda_8.0.61.2_linux.run
+
 # Install CUDNN 6.0 (note – don't use any other version)
 wget https://s3.amazonaws.com/kaggle-stuff/cudnn-8.0-linux-x64-v6.0.tgz
 tar -xzf cudnn-8.0-linux-x64-v6.0.tgz 
@@ -24,11 +29,6 @@ sudo cp -P cuda/include/* /usr/local/cuda/include/
 echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc
 echo 'export PATH=$PATH:$CUDA_HOME/bin' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64' >> ~/.bashrc
-
-# Install the CUDA 8 Patch
-wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/patches/2/cuda_8.0.61.2_linux-run
-mv cuda_8.0.61.2_linux-run cuda_8.0.61.2_linux.run
-sudo sh cuda_8.0.61.2_linux.run
 
 # Do some cleanup
 sudo rm cuda_8.0.61_375.26_linux.run
