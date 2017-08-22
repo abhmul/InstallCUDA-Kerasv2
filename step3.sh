@@ -14,11 +14,11 @@ sudo modprobe nvidia
 sudo ./cuda-linux64-rel-8.0.61-21551265.run
 cd ..
 
-# Install CUDNN 8.0 (note – don't use any other version)
-wget https://s3.amazonaws.com/kaggle-stuff/cudnn-8.0-linux-x64-v5.1.tgz
+# Install CUDNN 6.0 (note – don't use any other version)
+wget https://s3.amazonaws.com/kaggle-stuff/cudnn-8.0-linux-x64-v6.0.tgz
 tar -xzf cudnn-8.0-linux-x64-v5.1.tgz 
-sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
-sudo cp -P cuda/include/cudnn.h /usr/local/cuda/include/
+sudo cp -P cuda/lib64/* /usr/local/cuda/lib64
+sudo cp -P cuda/include/* /usr/local/cuda/include/
 
 # Set up the CUDA home, path, and library path
 echo 'export CUDA_HOME=/usr/local/cuda' >> ~/.bashrc
@@ -34,11 +34,7 @@ sudo rm -rf nvidia_installers
 
 # Install tensorflow
 sudo pip3 install --upgrade pip
-export TF_BINARY_URL=https://pypi.python.org/packages/f0/2e/49c8cf629dfd4bc4932$
-sudo pip3 install --ignore-installed --upgrade $TF_BINARY_URL
-export TF_GPU_BINARY_URL=https://pypi.python.org/packages/f2/5e/a51a5df287753c6$
-sudo pip3 install --ignore-installed --upgrade $TF_GPU_BINARY_URL
-#sudo pip3 install tensorflow-gpu
+sudo pip3 install tensorflow-gpu==1.3.0
 
 # Install keras
 sudo pip3 install keras
