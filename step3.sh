@@ -16,7 +16,7 @@ cd ..
 
 # Install CUDNN 6.0 (note – don't use any other version)
 wget https://s3.amazonaws.com/kaggle-stuff/cudnn-8.0-linux-x64-v6.0.tgz
-tar -xzf cudnn-8.0-linux-x64-v5.1.tgz 
+tar -xzf cudnn-8.0-linux-x64-v6.0.tgz 
 sudo cp -P cuda/lib64/* /usr/local/cuda/lib64
 sudo cp -P cuda/include/* /usr/local/cuda/include/
 
