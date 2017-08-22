@@ -53,6 +53,10 @@ This one will require some user input.
    * Click "Enter" to accept the default CUDA install path
    * Click "Enter to accept the default desktop menu shortcuts
    * Click "Enter" to do the default symbolic link creation between /usr/local/cuda-8.0 and /usr/local/cuda
+
+3. For the cuBLAS patch installation
+   * You'll have to hold "Enter" until you reach the end of the EULA, and then type "accept" (Does anyone actually read these things)
+   * Click "Enter" to accept the default CUDA install path
  
  The script will do one last reboot, so same deal as in Step 1.
 
@@ -66,7 +70,7 @@ tar -zxvf CatDogDataset.tar.gz
 python3 bottleneck_example.py
 ```
 
-If everything worked properly, after Tensorflow finishes loading up we should see the model training at around 150s/epoch. The python file will save the best model weights after every epoch.
+If everything worked properly, after Tensorflow finishes loading up we should see the model training at around 123s/epoch for the first epoch. By the 2nd or 3rd epoch the model should be training at around 103s/epoch. The python file will save the best model weights after every epoch.
 
 ## Step 5 (Cleanup)
 
