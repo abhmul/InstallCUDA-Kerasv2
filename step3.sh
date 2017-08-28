@@ -19,6 +19,7 @@ patch -p1 < gistfile1.patch
 # Install the drivers
 sudo ./nvidia-installer
 # Install CUDA 8
+cd ..
 sudo modprobe nvidia
 sudo ./cuda-linux64-rel-8.0.61-21551265.run
 cd ..
