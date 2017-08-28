@@ -9,7 +9,16 @@ mv cuda_8.0.61_375.26_linux-run cuda_8.0.61_375.26_linux.run
 chmod +x cuda_8.0.61_375.26_linux.run
 ./cuda_8.0.61_375.26_linux.run -extract=`pwd`/nvidia_installers
 cd nvidia_installers
-sudo ./NVIDIA-Linux-x86_64-375.26.run
+# sudo ./NVIDIA-Linux-x86_64-375.26.run
+sh NVIDIA-Linux-x86_64-375.26.run --extract-only
+cd NVIDIA-Linux-x86_64-375.26
+# Get the patch for the GCP fix and apply it
+wget https://gist.githubusercontent.com/tpruzina/939ca3170d1aa48a601228b7773e2bb1/raw/8ed7ac1cd1615d8e858d9b152aa1cc2da91b6cb1/gistfile1.txt
+mv gistfile1.txt gistfile1.patch
+patch -p1 < gistfile1.patch
+# Install the drivers
+sudo ./nvidia-installer
+# Install CUDA 8
 sudo modprobe nvidia
 sudo ./cuda-linux64-rel-8.0.61-21551265.run
 cd ..
