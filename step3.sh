@@ -59,7 +59,9 @@ sudo pip3 install h5py
 sudo pip install http://download.pytorch.org/whl/cu80/torch-0.2.0.post2-cp35-cp35m-manylinux1_x86_64.whl
 sudo pip install torchvision
 git clone https://github.com/abhmul/PyJet
+cd PyJet
 sudo pip install -e .
+cd ..
 
 # Install some other useful packages
 sudo pip3 install pillow
