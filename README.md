@@ -9,6 +9,7 @@ First you'll need an instance on Ubuntu 16.04 LTS with an Nvidia GPU (p2.xlarge 
 ```
 git clone https://github.com/abhmul/InstallCUDA-Kerasv2
 ```
+**Note**: If you're using Google Cloud (GCP) you'll want to run `git checkout abhmul-gcp-patch` to fix a low-level incompatibility bug between GCP and the Nvidia Drivers.
 
 Then run the following command:
 
