@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install latest Linux headers
-sudo apt-get install -y linux-source linux-headers-`uname -r` 
+sudo apt-get install -y linux-source linux-headers-`uname -r`
 
 # Install CUDA 8.0 (note – don't use any other version)
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
@@ -11,17 +11,17 @@ chmod +x cuda_8.0.61_375.26_linux.run
 cd nvidia_installers
 sudo ./NVIDIA-Linux-x86_64-375.26.run
 sudo modprobe nvidia
-sudo ./cuda-linux64-rel-8.0.61-21551265.run
+sudo ./cuda-linux64-rel-8.0.61-21551265.run -silent
 cd ..
 
 # Install the CUDA 8 Patch
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/patches/2/cuda_8.0.61.2_linux-run
 mv cuda_8.0.61.2_linux-run cuda_8.0.61.2_linux.run
-sudo sh cuda_8.0.61.2_linux.run
+sudo sh cuda_8.0.61.2_linux.run -silent
 
 # Install CUDNN 6.0 (note – don't use any other version)
 wget https://s3.amazonaws.com/kaggle-stuff/cudnn-8.0-linux-x64-v6.0.tgz
-tar -xzf cudnn-8.0-linux-x64-v6.0.tgz 
+tar -xzf cudnn-8.0-linux-x64-v6.0.tgz
 sudo cp -P cuda/lib64/* /usr/local/cuda/lib64
 sudo cp -P cuda/include/* /usr/local/cuda/include/
 
