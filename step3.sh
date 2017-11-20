@@ -46,7 +46,7 @@ sudo pip3 install keras
 sudo pip3 install h5py
 
 # Install PyTorch and PyJet
-sudo pip3 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post2-cp35-cp35m-manylinux1_x86_64.whl
+sudo pip3 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
 sudo pip3 install torchvision
 git clone https://github.com/abhmul/PyJet
 cd PyJet
