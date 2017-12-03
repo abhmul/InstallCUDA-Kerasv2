@@ -9,7 +9,7 @@ mv cuda_8.0.61_375.26_linux-run cuda_8.0.61_375.26_linux.run
 chmod +x cuda_8.0.61_375.26_linux.run
 ./cuda_8.0.61_375.26_linux.run -extract=`pwd`/nvidia_installers
 cd nvidia_installers
-sudo ./NVIDIA-Linux-x86_64-375.26.run
+sudo apt-get nvidia-375 nvidia-modprobe
 sudo modprobe nvidia
 sudo ./cuda-linux64-rel-8.0.61-21551265.run -silent
 cd ..
