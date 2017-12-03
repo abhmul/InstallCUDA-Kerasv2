@@ -3,18 +3,18 @@
 # Install latest Linux headers
 sudo apt-get install -y linux-source linux-headers-`uname -r`
 
+# Install the drivers through aptitude
+sudo apt-get purge nvidia*
+sudo add-apt-repository ppa:graphics-drivers/ppa
+sudo apt-get update
+sudo apt-get install nvidia-375
+
 # Install CUDA 8.0 (note – don't use any other version)
 wget https://developer.nvidia.com/compute/cuda/8.0/Prod2/local_installers/cuda_8.0.61_375.26_linux-run
 mv cuda_8.0.61_375.26_linux-run cuda_8.0.61_375.26_linux.run
 chmod +x cuda_8.0.61_375.26_linux.run
 ./cuda_8.0.61_375.26_linux.run -extract=`pwd`/nvidia_installers
 cd nvidia_installers
-# Install the drivers through aptitude
-sudo apt-get purge nvidia*
-sudo add-apt-repository ppa:graphics-drivers
-sudo apt-get update
-sudo apt-get install nvidia-375
-
 sudo modprobe nvidia
 sudo ./cuda-linux64-rel-8.0.61-21551265.run -silent
 cd ..
