@@ -11,6 +11,8 @@ git clone https://github.com/abhmul/InstallCUDA-Kerasv2
 ```
 **Note**: If you're using Google Cloud (GCP) you'll want to run `git checkout abhmul-gcp-patch` to fix a low-level incompatibility bug between GCP and the Nvidia Drivers.
 
+**Note**: If you're using Ubuntu desktop you'll want to run `git checkout abhmul-ubuntu-desktop-patch` to properly install without getting xserver issues.
+
 Then run the following command:
 
 ```
