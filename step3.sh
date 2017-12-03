@@ -9,7 +9,12 @@ mv cuda_8.0.61_375.26_linux-run cuda_8.0.61_375.26_linux.run
 chmod +x cuda_8.0.61_375.26_linux.run
 ./cuda_8.0.61_375.26_linux.run -extract=`pwd`/nvidia_installers
 cd nvidia_installers
-sudo apt-get nvidia-375 nvidia-modprobe
+# Install the drivers through aptitude
+sudo apt-get purge nvidia*
+sudo add-apt-repository ppa:graphics-drivers
+sudo apt-get update
+sudo apt-get install nvidia-375
+
 sudo modprobe nvidia
 sudo ./cuda-linux64-rel-8.0.61-21551265.run -silent
 cd ..
