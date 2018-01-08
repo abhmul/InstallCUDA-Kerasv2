@@ -3,7 +3,7 @@
 # Install latest Linux headers
 sudo apt-get install -y linux-source linux-headers-`uname -r`
 
-# Install CUDA 9.1 (note – don't use any other version)
+# Install CUDA 9.0 (note – don't use any other version)
 wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run
 mv cuda_9.0.176_384.81_linux-run cuda_9.0.176_384.81_linux.run
 chmod +x cuda_9.0.176_384.81_linux.run
