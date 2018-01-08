@@ -25,7 +25,9 @@ Just run:
 sh step1.sh
 ```
 
-It's really that easy. When the script finishes the machine will reboot, so you'll get disconnected. Wait for a couple minutes, refresh your EC2 Console webpage, and reconnect to your instance
+It's really that easy. When the script finishes the machine will reboot, so you'll get disconnected. Wait for a couple minutes, refresh your EC2 Console webpage, and reconnect to your instance.
+
+**Note**: If you see a prompt that about */boot/grub/menu.lst*, select *Install the package maintainer's version*.
 
 ## Step 2
 
