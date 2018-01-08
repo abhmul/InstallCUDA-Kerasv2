@@ -11,7 +11,7 @@ chmod +x cuda_9.1.85_387.26_linux.run
 cd nvidia_installers
 sudo ./NVIDIA-Linux-x86_64-387.26.run
 sudo modprobe nvidia
-sudo ./cuda-linux.9.1.85-23083092.run -silent
+sudo ./cuda-linux.9.1.85-23083092.run -noprompt
 cd ..
 
 # Install CUDNN 7.0 (note – don't use any other version)
