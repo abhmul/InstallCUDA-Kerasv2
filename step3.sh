@@ -33,7 +33,7 @@ sudo rm -rf nvidia_installers
 
 # Install tensorflow
 sudo pip3 install --upgrade pip
-sudo pip3 install tensorflow-gpu==1.5.0
+sudo pip3 install tensorflow-gpu==1.5.0rc0
 
 # Install keras
 sudo pip3 install keras
