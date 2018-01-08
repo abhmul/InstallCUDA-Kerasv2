@@ -15,8 +15,8 @@ sudo ./cuda-linux.9.1.85-23083092.run -silent
 cd ..
 
 # Install CUDNN 6.0 (note – don't use any other version)
-wget https://s3.amazonaws.com/kaggle-stuff/cudnn-8.0-linux-x64-v6.0.tgz
-tar -xzf cudnn-8.0-linux-x64-v6.0.tgz
+wget https://s3.amazonaws.com/kaggle-stuff/cudnn-9.1-linux-x64-v7.tgz
+tar -xzf cudnn-9.1-linux-x64-v7.tgz
 sudo cp -P cuda/lib64/* /usr/local/cuda/lib64
 sudo cp -P cuda/include/* /usr/local/cuda/include/
 
@@ -27,7 +27,7 @@ echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64' >> ~/.bashrc
 
 # Do some cleanup
 sudo rm cuda_9.1.85_387.26_linux.run
-sudo rm cudnn-8.0-linux-x64-v6.0.tgz
+sudo rm cudnn-9.1-linux-x64-v7.tgz
 sudo rm -rf cuda
 sudo rm -rf nvidia_installers
 
