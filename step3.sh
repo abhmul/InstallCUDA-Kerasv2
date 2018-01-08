@@ -4,19 +4,19 @@
 sudo apt-get install -y linux-source linux-headers-`uname -r`
 
 # Install CUDA 9.1 (note – don't use any other version)
-wget https://developer.nvidia.com/compute/cuda/9.1/Prod/local_installers/cuda_9.1.85_387.26_linux
-mv cuda_9.1.85_387.26_linux cuda_9.1.85_387.26_linux.run
-chmod +x cuda_9.1.85_387.26_linux.run
-./cuda_9.1.85_387.26_linux.run -extract=`pwd`/nvidia_installers
+wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run
+mv cuda_9.0.176_384.81_linux-run cuda_9.0.176_384.81_linux.run
+chmod +x cuda_9.0.176_384.81_linux.run
+./cuda_9.0.176_384.81_linux.run -extract=`pwd`/nvidia_installers
 cd nvidia_installers
-sudo ./NVIDIA-Linux-x86_64-387.26.run
+sudo ./NVIDIA-Linux-x86_64-384.81.run
 sudo modprobe nvidia
-sudo ./cuda-linux.9.1.85-23083092.run -noprompt
+sudo ./cuda-linux.9.0.176-22781540.run -noprompt
 cd ..
 
 # Install CUDNN 7.0 (note – don't use any other version)
-wget https://s3.amazonaws.com/kaggle-stuff/cudnn-9.1-linux-x64-v7.tgz
-tar -xzf cudnn-9.1-linux-x64-v7.tgz
+wget https://s3.amazonaws.com/kaggle-stuff/cudnn-9.0-linux-x64-v7.tgz
+tar -xzf cudnn-9.0-linux-x64-v7.tgz
 sudo cp -P cuda/lib64/* /usr/local/cuda/lib64
 sudo cp -P cuda/include/* /usr/local/cuda/include/
 
@@ -26,8 +26,8 @@ echo 'export PATH=$PATH:$CUDA_HOME/bin' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDA_HOME/lib64' >> ~/.bashrc
 
 # Do some cleanup
-sudo rm cuda_9.1.85_387.26_linux.run
-sudo rm cudnn-9.1-linux-x64-v7.tgz
+sudo rm cuda_9.0.176_384.81_linux.run
+sudo rm cudnn-9.0-linux-x64-v7.tgz
 sudo rm -rf cuda
 sudo rm -rf nvidia_installers
 
