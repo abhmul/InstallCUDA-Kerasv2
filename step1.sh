@@ -6,7 +6,13 @@
 # Install various packages
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo apt-get install -y build-essential python3-pip python3-dev git python3-numpy swig python3-dev
+sudo apt-get install -y build-essential git
+
+# Install anaconda
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
+sudo apt-get install python3-pip
 
 # Blacklist Noveau which has some kind of conflict with the nvidia driver
 echo "blacklist nouveau\nblacklist lbm-nouveau\noptions nouveau modeset=0\nalias nouveau off\nalias lbm-nouveau off\n" | sudo tee /etc/modprobe.d/blacklist-nouveau.conf
