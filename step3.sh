@@ -38,6 +38,7 @@ sudo rm -rf nvidia_installers
 
 # Install anaconda
 wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+./Miniconda3-latest-Linux-x86_64.sh
 sudo pip3 install --upgrade pip
 conda update conda
 conda create -n dl anaconda
