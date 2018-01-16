@@ -36,9 +36,7 @@ sudo rm cudnn-9.0-linux-x64-v7.tgz
 sudo rm -rf cuda
 sudo rm -rf nvidia_installers
 
-# Install anaconda
-wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-sudo ./Miniconda3-latest-Linux-x86_64.sh
+# Set up anaconda and pip
 sudo pip3 install --upgrade pip
 conda update conda
 conda create -n dl anaconda
