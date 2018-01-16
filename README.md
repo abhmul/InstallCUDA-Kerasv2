@@ -11,7 +11,7 @@ git clone https://github.com/abhmul/InstallCUDA-Kerasv2
 ```
 **Note**: If you're using Google Cloud (GCP) you'll want to run `git checkout abhmul-gcp-patch` to fix a low-level incompatibility bug between GCP and the Nvidia Drivers.
 
-**Note**: If you're using Ubuntu desktop you'll want to run `git checkout abhmul-ubuntu-desktop-patch` to properly install without getting xserver issues.
+**Note**: If you're using Ubuntu desktop you'll want to run `git checkout abhmul-ubuntu-desktop-patch` to properly install without getting xserver issues. Also use the README from that branch.
 
 Then run the following command:
 
@@ -68,9 +68,11 @@ This one will require some user input.
 Now we can verify if everything properly installed with the example included in the repo. The example trains a pre-trained version of InceptionV3 to discern between images of cats and dogs. Run the following commands to test our installation:
 
 ```
+source activate dl
 cd InstallCUDA-Kerasv2
 tar -zxvf CatDogDataset.tar.gz
-python3 bottleneck_example.py
+python bottleneck_example.py
+source deactivate dl
 ```
 
 If everything worked properly, after Tensorflow finishes loading up we should see the model training at around 123s/epoch for the first epoch. By the 2nd or 3rd epoch the model should be training at around 103s/epoch. The python file will save the best model weights after every epoch.
