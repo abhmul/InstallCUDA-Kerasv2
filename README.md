@@ -4,7 +4,7 @@
 
 ## Pre-setup
 
-First you'll need an instance on Ubuntu 16.04 LTS with an Nvidia GPU (p2.xlarge AWS, g2.2xlarge AWS, GPU Google Cloud, etc.) to use with at least 16GB of storage. Once you've made it, connect to it and type the following command:
+First you'll need an instance on Ubuntu 16.04 LTS with an Nvidia GPU (p2.xlarge AWS, g2.2xlarge AWS, GPU Google Cloud, etc.) to use with at least **20GB of storage**. Once you've made it, connect to it and type the following command:
 
 ```
 git clone https://github.com/abhmul/InstallCUDA-Kerasv2
